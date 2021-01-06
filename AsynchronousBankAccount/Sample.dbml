@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Sample" Class="SampleDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-RBAIMPE\SQLEXPRESS;Initial Catalog=Sample;Integrated Security=True" SettingsObjectName="AsynchronousBankAccount.Properties.Settings" SettingsPropertyName="SampleConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.JointAccount" Member="JointAccounts">
+    <Type Name="JointAccount">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="accountnumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="balance" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
